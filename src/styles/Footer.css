@@ -1,0 +1,16 @@
+.footer {
+    @apply py-6 bg-gray-900 text-white text-center;
+  }
+  
+  .footer-container {
+    @apply flex flex-col items-center gap-2;
+  }
+  
+  .footer-icons {
+    @apply flex gap-4 mt-2;
+  }
+  
+  .footer-icons a {
+    @apply text-gray-400 hover:text-blue-400 transition duration-300;
+  }
+  

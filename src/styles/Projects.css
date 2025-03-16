@@ -1,0 +1,51 @@
+.projects {
+  @apply py-20 bg-gray-100 dark:bg-gray-900;
+}
+
+.projects-title {
+  @apply text-3xl font-bold tracking-tighter text-center mb-6;
+}
+
+.projects-subtitle {
+  @apply text-lg text-gray-600 dark:text-gray-300 text-center max-w-2xl mx-auto mb-10;
+}
+
+.projects-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-8;
+}
+
+.project-card {
+  @apply bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl;
+}
+
+.project-image {
+  @apply w-full h-48 object-cover;
+}
+
+.project-content {
+  @apply p-6;
+}
+
+.project-tags {
+  @apply flex flex-wrap gap-2 mt-2;
+}
+
+.project-tag {
+  @apply text-xs font-semibold bg-gray-200 dark:bg-gray-700 px-2 py-1 rounded;
+}
+
+.project-buttons {
+  @apply flex justify-between mt-4;
+}
+
+.project-button {
+  @apply bg-blue-500 text-white px-4 py-2 rounded-lg font-bold hover:bg-blue-600 transition;
+}
+
+.project-button-outline {
+  @apply border border-gray-500 text-gray-700 dark:text-gray-300 px-4 py-2 rounded-lg font-bold hover:bg-gray-200 dark:hover:bg-gray-700 transition;
+}
+
+.projects-more {
+  @apply text-center mt-12;
+}

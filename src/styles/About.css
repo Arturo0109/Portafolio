@@ -1,0 +1,39 @@
+.about {
+  @apply py-20 bg-gray-100;
+}
+
+.about-container {
+  @apply container px-4 md:px-6 flex flex-col md:flex-row gap-12 items-center;
+}
+
+.about-image-container {
+  @apply md:w-1/2 flex justify-center;
+}
+
+.about-image {
+  @apply relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-blue-500/20;
+}
+
+.about-title {
+  @apply text-3xl font-bold tracking-tighter mb-4;
+}
+
+.about-divider {
+  @apply w-20 h-1 bg-blue-500 rounded mb-6;
+}
+
+.about-text {
+  @apply text-gray-700;
+}
+
+.about-buttons {
+  @apply pt-4 flex flex-wrap gap-4;
+}
+
+.about-button {
+  @apply bg-blue-500 text-white font-bold py-3 px-6 rounded-lg transition-all hover:bg-blue-600;
+}
+
+.about-outline-button {
+  @apply border border-blue-500 text-blue-500 font-bold py-3 px-6 rounded-lg transition-all hover:bg-blue-500 hover:text-white;
+}

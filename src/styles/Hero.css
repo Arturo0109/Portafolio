@@ -1,0 +1,23 @@
+.hero {
+  @apply relative min-h-[75vh] flex flex-col justify-start items-center pt-24 text-center bg-gray-100 dark:bg-gray-900;
+}
+
+.hero-title {
+  @apply text-3xl md:text-5xl lg:text-6xl font-bold tracking-tighter;
+}
+
+.hero-subtitle {
+  @apply text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-[700px] mx-auto;
+}
+
+.hero-socials {
+  @apply flex justify-center space-x-6 mt-6;
+}
+
+.hero-buttons {
+  @apply flex flex-col sm:flex-row gap-4 justify-center mt-6;
+}
+
+.hero-scroll {
+  @apply absolute bottom-2 left-1/2 transform -translate-x-1/2 p-3 rounded-full bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 transition;
+}
