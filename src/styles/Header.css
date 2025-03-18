@@ -1,9 +1,9 @@
 
 .header {
-  @apply fixed top-0 w-full z-50 transition-all duration-300 bg-red-800 backdrop-blur-md dark:bg-gray-900/80 shadow;
+  @apply fixed top-0 w-full z-50 transition-all duration-300 bg-red-800 backdrop-blur-md dark:bg-slate-50 shadow;
 }
 
 .header.scrolled {
   @apply shadow-lg;
 }
- 
+
