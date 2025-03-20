@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
-import "../styles/hero.css";
+import "../styles/Hero.css";
 
 const Hero = () => {
   const [mounted, setMounted] = useState(false);

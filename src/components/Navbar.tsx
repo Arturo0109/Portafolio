@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
-import "../styles/navbar.css";
+import "../styles/Navbar.css";
 
 const navItems = [
   { name: "Inicio", href: "#home" },
@@ -13,10 +13,8 @@ const navItems = [
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  // Cierra el menú al hacer clic en un enlace o fuera del menú
   const closeMenu = () => setIsMenuOpen(false);
 
-  // Cierra el menú si se hace scroll
   useEffect(() => {
     const handleScroll = () => setIsMenuOpen(false);
     window.addEventListener("scroll", handleScroll);
@@ -29,7 +27,7 @@ const Navbar = () => {
         <div className="nav-container">
           {/* Logo */}
           <a href="#home" className="text-xl font-bold tracking-tighter text-blue-600 dark:text-blue-400">
-            Dev<span className="text-blue-400/80 dark:text-blue-500/80">Portfolio</span>
+            Juan <span className="text-blue-400/80 dark:text-blue-500/80">ArturDev</span>
           </a>
 
           {/* Menú en escritorio */}
