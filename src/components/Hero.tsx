@@ -14,7 +14,6 @@ const Hero = () => {
 
   return (
     <header id="home" className="hero">
-      {/* Elementos animados en el fondo */}
       <div className="absolute inset-0 overflow-hidden">
         {[...Array(3)].map((_, i) => (
           <motion.div
@@ -41,7 +40,6 @@ const Hero = () => {
       </div>
 
       <div className="container px-4 md:px-6 relative z-10 space-y-6">
-        {/* Información principal */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -56,7 +54,6 @@ const Hero = () => {
           </p>
         </motion.div>
 
-        {/* Redes sociales */}
         <nav className="hero-socials">
           {[
             { icon: <Github className="h-5 w-5" />, href: "https://github.com", label: "GitHub" },
@@ -81,7 +78,6 @@ const Hero = () => {
           ))}
         </nav>
 
-        {/* Botones de acción (completamente centrados) */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -106,8 +102,7 @@ const Hero = () => {
           </motion.a>
         </motion.div>
       </div>
-
-      {/* Icono de scroll-down animado */}
+      
       <motion.a
         href="#about"
         className="hero-scroll"

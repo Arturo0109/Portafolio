@@ -17,8 +17,8 @@ const Contact = () => {
       return;
     }
     setSubmitted(true);
-    setTimeout(() => setSubmitted(false), 3000); // Mensaje de éxito por 3 segundos
-    setFormData({ name: "", email: "", message: "" }); // Reseteamos el formulario
+    setTimeout(() => setSubmitted(false), 3000); 
+    setFormData({ name: "", email: "", message: "" }); 
   };
 
   return (

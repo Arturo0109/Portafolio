@@ -5,7 +5,6 @@ const About = () => {
   return (
     <section id="about" className="about">
       <div className="about-container">
-        {/* Imagen con animación */}
         <motion.figure
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -36,7 +35,6 @@ const About = () => {
           </figcaption>
         </motion.figure>
 
-        {/* Contenido de texto */}
         <motion.article
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -78,7 +76,6 @@ const About = () => {
             Me encanta crear experiencias de usuario fluidas y atractivas con código optimizado.
           </p>
 
-          {/* Botones */}
           <motion.div
             className="about-buttons"
             initial={{ opacity: 0, y: 20 }}

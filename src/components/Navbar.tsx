@@ -25,12 +25,10 @@ const Navbar = () => {
     <>
       <nav className="navbar">
         <div className="nav-container">
-          {/* Logo */}
           <a href="#home" className="text-xl font-bold tracking-tighter text-blue-600 dark:text-blue-400">
             Juan <span className="text-blue-400/80 dark:text-blue-500/80">ArturDev</span>
           </a>
 
-          {/* Menú en escritorio */}
           <div className="nav-links hidden md:flex">
             {navItems.map((item) => (
               <a key={item.name} href={item.href} className="nav-link">
@@ -39,17 +37,14 @@ const Navbar = () => {
             ))}
           </div>
 
-          {/* Botón de menú hamburguesa en móvil */}
           <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="nav-icon-button">
             {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
         </div>
       </nav>
 
-      {/* Fondo oscuro cuando el menú está abierto */}
       {isMenuOpen && <div className="menu-overlay" onClick={closeMenu}></div>}
 
-      {/* Menú móvil animado */}
       <motion.div
         initial={{ y: "-100%" }}
         animate={{ y: isMenuOpen ? 0 : "-100%" }}

@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="footer-container">
         <p>&copy; {new Date().getFullYear()} Mi Portafolio. Todos los derechos reservados.</p>
         
-        {/* Redes Sociales */}
+
         <div className="footer-icons">
           <a href="https://github.com/tuusuario" target="_blank" rel="noopener noreferrer">
             <FaGithub size={24} />

@@ -18,7 +18,7 @@ const projects = [
     title: "Task Management App",
     description:
       "Aplicación para gestión de tareas en equipo con actualizaciones en tiempo real.",
-    image: "/placeholder.jpg",
+    image: "../",
     tags: ["React", "Node.js", "Socket.io", "PostgreSQL", "Docker"],
     demoLink: "https://example.com",
     repoLink: "https://github.com",
@@ -36,7 +36,6 @@ const Projects = () => {
           </p>
         </div>
 
-        {/* Grid de proyectos */}
         <motion.div
           className="projects-grid"
           initial="hidden"
@@ -58,7 +57,6 @@ const Projects = () => {
                 <h3 className="text-xl font-bold">{project.title}</h3>
                 <p className="text-gray-600 dark:text-gray-300">{project.description}</p>
 
-                {/* Tags */}
                 <div className="project-tags">
                   {project.tags.map((tag, i) => (
                     <span key={i} className="project-tag">
@@ -67,7 +65,6 @@ const Projects = () => {
                   ))}
                 </div>
 
-                {/* Botones */}
                 <div className="project-buttons">
                   <motion.a
                     href={project.repoLink}
@@ -98,7 +95,6 @@ const Projects = () => {
           ))}
         </motion.div>
 
-        {/* Botón de ver más */}
         <motion.div
           className="projects-more"
           initial={{ opacity: 0, y: 20 }}
