@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+/*import { motion } from "framer-motion";
 import { ExternalLink, Github } from "lucide-react";
 import "../styles/Projects.css";
 import  "../image/ecomerce.png";
@@ -119,4 +119,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default Projects;*/

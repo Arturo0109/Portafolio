@@ -92,7 +92,7 @@ const About = () => {
                 Contáctame
               </motion.button>
             </a>
-            <a href="/CV.pdf" download>
+            <a href="\Hoja de Vida CV Programador.pdf" download>
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
