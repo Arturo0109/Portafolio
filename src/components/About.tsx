@@ -12,9 +12,9 @@ const About = () => {
           viewport={{ once: true }}
           className="about-image-container"
         >
-          <motion.div
+            <motion.div
             className="about-image"
-            whileHover={{ scale: 1.05 }}
+            whileHover={{ scale: 1.02 }}
             animate={{
               boxShadow: [
                 "0px 0px 0px rgba(0,0,0,0)",
@@ -22,10 +22,9 @@ const About = () => {
                 "0px 0px 0px rgba(0,0,0,0)",
               ],
             }}
-            transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY }}
           >
             <img
-              src="/tu-imagen.jpg"
+              src="/foto.jpg"
               alt="Foto de perfil del desarrollador"
               className="object-cover w-full h-full"
             />
@@ -69,11 +68,13 @@ const About = () => {
           </header>
 
           <p className="about-text">
-            Soy un desarrollador apasionado con experiencia en React, Tailwind CSS y tecnologías modernas.
-          </p>
+          Soy un programador con formación en Tecnología en Desarrollo de Software. 
+          He trabajado en proyectos, desarrollando habilidades en desarrollo web 
+          (HTML, CSS, JavaScript, React, Node.js) y gestión de bases de datos (SQL, NoSQL). </p>
 
           <p className="about-text">
-            Me encanta crear experiencias de usuario fluidas y atractivas con código optimizado.
+          Busco seguir creciendo en el campo del desarrollo de software, aportando en proyectos innovadores y desafiantes.
+          Me encanta crear experiencias de usuario fluidas y atractivas con código optimizado.
           </p>
 
           <motion.div

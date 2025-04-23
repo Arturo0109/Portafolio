@@ -5,20 +5,44 @@ import "../styles/Contact.css";
 const Contact = () => {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState(false);
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+
+  interface HandleChangeEvent extends React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement> {}
+
+  const handleChange = (e: HandleChangeEvent): void => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
     if (!formData.name || !formData.email || !formData.message) {
       alert("Por favor, completa todos los campos.");
       return;
     }
-    setSubmitted(true);
-    setTimeout(() => setSubmitted(false), 3000); 
-    setFormData({ name: "", email: "", message: "" }); 
+
+    try {
+      const response = await fetch("https://formspree.io/f/movdqywa", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setSubmitted(true);
+        setFormData({ name: "", email: "", message: "" }); 
+        setTimeout(() => setSubmitted(false), 3000); 
+      } else {
+        throw new Error("Error al enviar el formulario");
+      }
+    } catch (err) {
+      console.error(err);
+      setError(true);
+      setTimeout(() => setError(false), 3000); 
+    }
   };
 
   return (
@@ -38,6 +62,7 @@ const Contact = () => {
           className="contact-input"
           value={formData.name}
           onChange={handleChange}
+          required
         />
         <input
           type="email"
@@ -46,6 +71,7 @@ const Contact = () => {
           className="contact-input"
           value={formData.email}
           onChange={handleChange}
+          required
         />
         <textarea
           name="message"
@@ -54,12 +80,14 @@ const Contact = () => {
           rows={4}
           value={formData.message}
           onChange={handleChange}
+          required
         ></textarea>
         <button type="submit" className="contact-button">
           Enviar
         </button>
 
         {submitted && <p className="contact-success">¡Mensaje enviado con éxito! ✅</p>}
+        {error && <p className="contact-error">Ha ocurrido un error al enviar el mensaje. ❌</p>}
       </motion.form>
     </section>
   );

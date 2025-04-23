@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowDown, Github, Linkedin } from "lucide-react";
 import "../styles/Hero.css";
 
 const Hero = () => {
@@ -47,18 +47,17 @@ const Hero = () => {
           className="space-y-4"
         >
           <h1 className="hero-title">
-            ¡Hola! Soy <span className="text-blue-500">Desarrollador Web</span>
+            ¡Hola! Soy <span className="text-blue-500">Desarrollador Full - Stack</span>
           </h1>
           <p className="hero-subtitle">
-            Construyo aplicaciones modernas con React, Tailwind CSS y Node.js.
+            Construyo aplicaciones modernas con React y Node.js.
           </p>
         </motion.div>
 
         <nav className="hero-socials">
           {[
-            { icon: <Github className="h-5 w-5" />, href: "https://github.com", label: "GitHub" },
-            { icon: <Linkedin className="h-5 w-5" />, href: "https://linkedin.com", label: "LinkedIn" },
-            { icon: <Mail className="h-5 w-5" />, href: "mailto:contact@example.com", label: "Email" },
+            { icon: <Github className="h-5 w-5" />, href: "https://github.com/Arturo0109", label: "GitHub" },
+            { icon: <Linkedin className="h-5 w-5" />, href: "https://linkedin.com/in/juanarturodev/", label: "LinkedIn" }
           ].map((item, index) => (
             <motion.a
               key={index}
