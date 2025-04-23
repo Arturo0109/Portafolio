@@ -1,54 +1,21 @@
-# React + TypeScript + Vite
+Proyecto de uso personal y didactico 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este es mi portafolio personal, una página web donde muestro mis proyectos, habilidades y experiencia profesional. Está diseñado para ser minimalista, moderno y fácil de navegar, con enfoque en la usabilidad y el diseño responsivo.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+🌟 Características principales
+Diseño moderno y minimalista : Interfaz limpia y profesional.
+Responsivo : Compatible con dispositivos móviles, tablets y escritorio.
+Animaciones suaves : Uso de Framer Motion para transiciones atractivas.
+Optimizado para SEO : Mejoras para mejorar la visibilidad en motores de búsqueda.
+Dark Mode / Light Mode : Cambio dinámico entre temas claros y oscuros.
+Formulario de contacto funcional : Integración con Formspree para recibir mensajes directamente en tu correo electrónico.
+Despliegue automático : Configurado para desplegarse automáticamente en plataformas como Vercel o Netlify.
+🛠 Tecnologías utilizadas
+Frontend :
+React.js (con Vite como bundler)
+Tailwind CSS (para estilos)
+Framer Motion (para animaciones)
+Herramientas adicionales :
+Formspree (para el formulario de contacto)
+Vercel (para hosting)
+ESLint y Prettier (para mantener el código limpio)
